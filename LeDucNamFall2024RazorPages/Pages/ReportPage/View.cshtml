@@ -1,0 +1,58 @@
+﻿@page
+@model LeDucNamFall2024RazorPages.Pages.ReportPage.ViewModel
+@{
+    Layout = "_AdminLayout";
+}
+
+@if (TempData["Message"] != null)
+{
+    <h2>@TempData["Message"]</h2>
+}
+
+@if (TempData["Message"] != null)
+{
+    <h3>@TempData["Message"]</h3>
+}
+
+<form method="post">
+    <div>
+        <label for="StartDate">Start Date:</label>
+        <input type="date" asp-for="StartDate" required />
+    </div>
+
+    <div>
+        <label for="EndDate">End Date:</label>
+        <input type="date" asp-for="EndDate" required />
+    </div>
+
+    <div>
+        <button type="submit">Create Report</button>
+    </div>
+</form>
+
+@if (Model.NewsArticles != null && Model.NewsArticles.Count > 0)
+{
+    <h3>Report Results:</h3>
+    <p>Total news articles : @Model.NewsArticles.Count() </p>
+    <table>
+        <thead>
+            <tr>
+                <th>News Title</th>
+                <th>Created Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var article in Model.NewsArticles)
+            {
+                <tr>
+                    <td>@article.NewsTitle</td>
+                    <td>@article.CreatedDate?.ToString("yyyy-MM-dd")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else if (Model.NewsArticles != null && Model.NewsArticles.Count == 0)
+{
+    <p>No articles found for the selected date range.</p>
+}

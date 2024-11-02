@@ -1,0 +1,58 @@
+﻿@page
+@model LeDucNamFall2024RazorPages.Pages.LoginModel
+@{
+    Layout = null;
+}
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-form {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 40px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 300px; /* Độ rộng của form */
+    }
+
+    .btn {
+        margin-top: 20px; /* Khoảng cách giữa form và nút Cancel */
+        padding: 10px 20px; /* Kích thước cho nút */
+        background-color: #007bff; /* Màu nền cho nút */
+        color: white; /* Màu chữ */
+        text-decoration: none; /* Bỏ gạch chân */
+        border-radius: 5px; /* Bo góc */
+        display: inline-block; /* Hiển thị nút như một khối */
+    }
+</style>
+
+<div class="login-form">
+    <h2>Login form</h2>
+
+    @if (TempData["Message"] != null)
+    {
+        <h3>@TempData["Message"]</h3>
+    }
+
+    <form method="post">
+        <div style="margin-bottom: 15px;">
+            <label asp-for="username" style="font-size: 1.2em;">Username</label><br />
+            <input asp-for="username" type="text" required style="width: 100%; padding: 10px; font-size: 1.2em; margin-top: 10px; border-radius: 5px; border: 1px solid #ccc;" />
+        </div>
+        <div style="margin-bottom: 20px;">
+            <label asp-for="password" style="font-size: 1.2em;">Password</label><br />
+            <input asp-for="password" type="password" required style="width: 100%; padding: 10px; font-size: 1.2em; margin-top: 10px; border-radius: 5px; border: 1px solid #ccc;" />
+        </div>
+        <input type="submit" value="Login" style="padding: 10px 20px; font-size: 1.2em; background-color: #5cb85c; color: white; border: none; border-radius: 5px; cursor: pointer;" />
+    </form>
+
+    <a asp-page="Homepage" class="btn">Cancel</a>
+</div>

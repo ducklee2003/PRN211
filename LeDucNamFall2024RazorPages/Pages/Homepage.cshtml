@@ -1,0 +1,38 @@
+﻿@page
+@model LeDucNamFall2024RazorPages.Pages.HomepageModel
+@{
+    Layout = "_Layout";
+}
+
+@if (Model.newsArticles != null && Model.newsArticles.Any())
+{
+    <table>
+        <thead>
+            <tr>
+                <th>News Title</th>
+                <th>Created Date</th>
+                <th>Created By</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var news in Model.newsArticles)
+            {
+                <tr>
+                    <td>@news.NewsTitle</td>
+                    <td>@news.CreatedDate.Value.ToString("MM/dd/yyyy")</td>
+                    <td>@news.CreatedBy.AccountName</td>
+                    <td>
+                        <form asp-page="/NewsArticlePage/View" method="get">
+                            <input type="hidden" name="id" value="@news.NewsArticleId" />
+                            <button type="submit">View</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No news articles available.</p>
+}

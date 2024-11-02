@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\LeDucNamFall2024RazorPages.props" />
+</Project>

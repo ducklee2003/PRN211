@@ -1,0 +1,30 @@
+﻿@page
+@model LeDucNamFall2024RazorPages.Pages.AccountPage.CreateModel
+@{
+    Layout = "_AdminLayout";
+}
+@if (TempData["Message"] != null)
+{
+    <h2>@TempData["Message"]</h2>
+}
+<form method="post">
+   <div>
+        <label asp-for="systemAccount.AccountId"></label>
+        <input asp-for="systemAccount.AccountId" type="text" value="@Model.systemAccount.AccountId" readonly />
+   </div>
+    <div>
+        <label asp-for="systemAccount.AccountName"></label>
+        <input asp-for="systemAccount.AccountName" type="text" required />
+    </div>
+    <div>
+        <label asp-for="systemAccount.AccountEmail"></label>
+        <input asp-for="systemAccount.AccountEmail" type="text" required />
+    </div>
+    <div>
+        <label asp-for="systemAccount.AccountPassword"></label>
+        <input asp-for="systemAccount.AccountPassword" type="text" required />
+    </div>
+    <div>
+        <button type="submit">Create staff</button>
+    </div>
+</form>

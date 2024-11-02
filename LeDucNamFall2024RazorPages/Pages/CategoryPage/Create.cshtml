@@ -1,0 +1,36 @@
+﻿@page
+@model LeDucNamFall2024RazorPages.Pages.CategoryPage.CreateModel
+@{
+    Layout = "_StaffLayout";
+}
+@if (TempData["Message"] != null)
+{
+    <h2>@TempData["Message"]</h2>
+}
+<form asp-page="" method="post">
+    <div>
+        <label asp-for="category.CategoryName"></label>
+        <input asp-for="category.CategoryName" type="text" required />
+    </div>
+
+    <div>
+        <label asp-for="category.CategoryDesciption"></label>
+        <input asp-for="category.CategoryDesciption"  type="text" required />
+    </div>
+
+    <div>
+        <label asp-for="category.ParentCategoryId"></label>
+        <select asp-for="category.ParentCategoryId" asp-items="Model.parentList" required></select>
+    </div>
+
+    <div>
+        <label asp-for="category.IsActive"></label>
+        <select asp-for="category.IsActive" asp-items="Model.isActiveOptions"></select>
+    </div>
+
+    <button type="submit">Create category</button>
+</form>
+
+<form>
+    <button asp-page="/CategoryPage/View">Back to view</button>
+</form>

@@ -1,0 +1,74 @@
+﻿@page
+@model LeDucNamFall2024RazorPages.Pages.NewsArticlePage.DeleteModel
+@{
+    Layout = "_StaffLayout";
+}
+@if (TempData["Message"] != null)
+{
+    <h2>@TempData["Message"]</h2>
+}
+<form method="post" asp-page-handler="DeleteNews">
+    <div>
+        <label asp-for="newsArticle.NewsArticleId"></label>
+        <input asp-for="newsArticle.NewsArticleId" value="@Model.newsArticle.NewsArticleId" type="text" readonly />
+    </div>
+    <div>
+        <label asp-for="newsArticle.CreatedDate"></label>
+        <input asp-for="newsArticle.CreatedDate" value="@Model.newsArticle.CreatedDate" type="text" readonly />
+    </div>
+    <div>
+        <label asp-for="newsArticle.CreatedById"></label>
+        <input asp-for="newsArticle.CreatedById" value="@Model.newsArticle.CreatedById" type="text" readonly />
+    </div>
+    <div>
+        <label asp-for="newsArticle.NewsTitle"></label>
+        <input asp-for="newsArticle.NewsTitle" value="@Model.newsArticle.NewsTitle" type="text" required />
+    </div>
+    <div>
+        <label asp-for="newsArticle.Headline"></label>
+        <input asp-for="newsArticle.Headline" value="@Model.newsArticle.Headline" type="text" required />
+    </div>
+    <div>
+        <label asp-for="newsArticle.NewsContent"></label>
+        <input asp-for="newsArticle.NewsContent" value="@Model.newsArticle.NewsContent" type="text" required />
+    </div>
+    <div>
+        <label asp-for="newsArticle.NewsSource"></label>
+        <input asp-for="newsArticle.NewsSource" value="@Model.newsArticle.NewsSource" type="text" required />
+    </div>
+
+    <div>
+        <input type="hidden" name="id" value="@Model.newsArticle.NewsArticleId" />
+        <button type="submit">Delete</button>
+    </div>
+</form>
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Tag</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var tag in Model.listTag)
+        {
+            <tr>
+                <td>@tag.TagName</td>
+            </tr>
+        }
+        <tr>
+            <form method="post" asp-page-handler="DeleteTag">
+                <input type="hidden" name="id" value="@Model.newsArticle.NewsArticleId"/>
+                <button type="submit">Delete tag</button>
+            </form>
+        </tr>
+    </tbody>
+</table>
+
+
+<form asp-page="/NewsArticlePage/ViewByStaff" method="get">
+    <div>
+        <button type="submit">Back to news</button>
+    </div>
+</form>

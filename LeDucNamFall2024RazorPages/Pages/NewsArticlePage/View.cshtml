@@ -1,0 +1,33 @@
+﻿@page
+@model LeDucNamFall2024RazorPages.Pages.NewsArticlePage.ViewModel
+@{
+    Layout = "_NewsLayout";
+}
+
+<h2>View new</h2>
+@if(Model.NewsArticle != null)
+{
+    <h1>@Model.NewsArticle.NewsTitle</h1>
+    <h2>@Model.NewsArticle.Headline</h2>
+    <h3>Author: @Model.NewsArticle.CreatedBy.AccountName</h3>
+    <h3>Date: @Model.NewsArticle.CreatedDate.Value.ToString("MM/dd/yyyy")</h3>
+    <p>@Model.NewsArticle.NewsContent</p>
+
+    <p>Source of the new:   @Model.NewsArticle.NewsSource</p>
+    <p>Category of the new: @Model.NewsArticle.Category.CategoryName</p>
+}
+else
+{
+    <h2>Can not view detail new</h2>
+}
+@{
+    int? userRole = HttpContext.Session.GetInt32("AccountRole");
+}
+
+<form method="get">
+    <button type="submit" formaction="@(userRole == 1 ? "/StaffPage" : userRole == 2 ? "/LecturePage" : "/Homepage")">
+        Back
+    </button>
+</form>
+
+

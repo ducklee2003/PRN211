@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" type="text/css" href="~/css/site.css" />
+    <style>
+        /* Style cho header và nav */
+        header {
+            background-color: #f8f9fa;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 20px; /* Khoảng cách giữa các mục */
+        }
+
+            nav ul li {
+                position: relative;
+            }
+
+                /* Style cho submenu */
+                nav ul li ul {
+                    display: none; /* Ẩn submenu */
+                    position: absolute;
+                    left: 0;
+                    top: 100%;
+                    background-color: white;
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                    padding: 10px;
+                    z-index: 1; /* Đảm bảo submenu nằm trên các phần khác */
+                }
+
+                /* Hiện submenu khi hover */
+                nav ul li:hover ul {
+                    display: block;
+                }
+
+        /* Style cho link */
+        nav a {
+            text-decoration: none;
+            color: #007bff; /* Màu mặc định cho link */
+        }
+
+            nav a:hover {
+                text-decoration: underline; /* Gạch chân khi hover */
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Staff Management</h1>
+        <nav>
+            <ul>
+                <li>
+                    <strong>Manage account information</strong>
+                    <ul>
+                        <li><a asp-page="/AccountPage/View">View Account</a></li>
+                        <li><a asp-page="/AccountPage/Create">Add Staff Account</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Manage Report </strong>
+                    <ul>
+                        <li><a asp-page="/ReportPage/View">View Report</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

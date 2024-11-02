@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" type="text/css" href="~/css/site.css" />
+    <style>
+        /* Style cho header và nav */
+        header {
+            background-color: #f8f9fa;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 20px; /* Khoảng cách giữa các mục */
+        }
+
+            nav ul li {
+                position: relative;
+            }
+
+                /* Style cho submenu */
+                nav ul li ul {
+                    display: none; /* Ẩn submenu */
+                    position: absolute;
+                    left: 0;
+                    top: 100%;
+                    background-color: white;
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                    padding: 10px;
+                    z-index: 1; /* Đảm bảo submenu nằm trên các phần khác */
+                }
+
+                /* Hiện submenu khi hover */
+                nav ul li:hover ul {
+                    display: block;
+                }
+
+        /* Style cho link */
+        nav a {
+            text-decoration: none;
+            color: #007bff; /* Màu mặc định cho link */
+        }
+
+            nav a:hover {
+                text-decoration: underline; /* Gạch chân khi hover */
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Staff Management</h1>
+        <nav>
+            <ul>
+                <li>
+                    <strong>Manage Category Information</strong>
+                    <ul>
+                        <li><a asp-page="/CategoryPage/View">View Categories</a></li>
+                        <li><a asp-page="/CategoryPage/Create">Add New Category</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Manage News Articles</strong>
+                    <ul>
+                        <li><a asp-page="/NewsArticlePage/ViewByStaff">View News Articles</a></li>
+                        <li><a asp-page="/NewsArticlePage/Create">Add New Article</a></li>
+                        <li><a asp-page="/NewsArticlePage/ViewHistory">View News History</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Manage My Profile</strong>
+                    <ul>
+                        <li><a asp-page="/AccountPage/ViewProfile">View Profile</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

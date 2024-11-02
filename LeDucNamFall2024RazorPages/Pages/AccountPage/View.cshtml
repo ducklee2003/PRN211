@@ -1,0 +1,44 @@
+﻿@page
+@model LeDucNamFall2024RazorPages.Pages.AccountPage.ViewModel
+@{
+    Layout = "_AdminLayout";
+}
+
+@if (TempData["Message"] != null)
+{
+    <h2>@TempData["Message"]</h2>
+}
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>ID</th>
+            <th>ID</th>
+            <th>ID</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var accounts in Model.systemAccounts)
+        {
+            <tr>
+                <td>@accounts.AccountId</td>
+                <td>@accounts.AccountName</td>
+                <td>@accounts.AccountEmail</td>
+                <td>@accounts.AccountRole</td>
+                <td>
+                    <form method="get" asp-page="/AccountPage/Update">
+                        <input type="hidden" name="id" value="@accounts.AccountId" />
+                        <button type="submit">Update</button>
+                    </form>
+                </td>
+                <td>
+                    <form method="post" asp-page-handler="DeleteAccount">
+                        <input type="hidden" name="id" value="@accounts.AccountId" />
+                        <button type="submit">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

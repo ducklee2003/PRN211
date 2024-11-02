@@ -1,0 +1,139 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = LeDucNamFall2024RazorPages
+build_property.RootNamespace = LeDucNamFall2024RazorPages
+build_property.ProjectDir = D:\S7\LeDucNam_SE170582_Fall2024_A02.03\LeDucNam_SE170582_Fall2024_A02.03\LeDucNamFall2024RazorPages\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\S7\LeDucNam_SE170582_Fall2024_A02.03\LeDucNam_SE170582_Fall2024_A02.03\LeDucNamFall2024RazorPages
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/S7/LeDucNam_SE170582_Fall2024_A02.03/LeDucNam_SE170582_Fall2024_A02.03/LeDucNamFall2024RazorPages/Pages/AccountPage/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFBhZ2VcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/S7/LeDucNam_SE170582_Fall2024_A02.03/LeDucNam_SE170582_Fall2024_A02.03/LeDucNamFall2024RazorPages/Pages/AccountPage/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFBhZ2VcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/S7/LeDucNam_SE170582_Fall2024_A02.03/LeDucNam_SE170582_Fall2024_A02.03/LeDucNamFall2024RazorPages/Pages/AccountPage/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFBhZ2VcVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/S7/LeDucNam_SE170582_Fall2024_A02.03/LeDucNam_SE170582_Fall2024_A02.03/LeDucNamFall2024RazorPages/Pages/AccountPage/View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFBhZ2VcVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/S7/LeDucNam_SE170582_Fall2024_A02.03/LeDucNam_SE170582_Fall2024_A02.03/LeDucNamFall2024RazorPages/Pages/AccountPage/ViewProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFBhZ2VcVmlld1Byb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/S7/LeDucNam_SE170582_Fall2024_A02.03/LeDucNam_SE170582_Fall2024_A02.03/LeDucNamFall2024RazorPages/Pages/AdminPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5QYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/S7/LeDucNam_SE170582_Fall2024_A02.03/LeDucNam_SE170582_Fall2024_A02.03/LeDucNamFall2024RazorPages/Pages/CategoryPage/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnlQYWdlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/S7/LeDucNam_SE170582_Fall2024_A02.03/LeDucNam_SE170582_Fall2024_A02.03/LeDucNamFall2024RazorPages/Pages/CategoryPage/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnlQYWdlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/S7/LeDucNam_SE170582_Fall2024_A02.03/LeDucNam_SE170582_Fall2024_A02.03/LeDucNamFall2024RazorPages/Pages/CategoryPage/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnlQYWdlXFVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/S7/LeDucNam_SE170582_Fall2024_A02.03/LeDucNam_SE170582_Fall2024_A02.03/LeDucNamFall2024RazorPages/Pages/CategoryPage/View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnlQYWdlXFZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/S7/LeDucNam_SE170582_Fall2024_A02.03/LeDucNam_SE170582_Fall2024_A02.03/LeDucNamFall2024RazorPages/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/S7/LeDucNam_SE170582_Fall2024_A02.03/LeDucNam_SE170582_Fall2024_A02.03/LeDucNamFall2024RazorPages/Pages/Homepage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZXBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/S7/LeDucNam_SE170582_Fall2024_A02.03/LeDucNam_SE170582_Fall2024_A02.03/LeDucNamFall2024RazorPages/Pages/LecturePage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVjdHVyZVBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/S7/LeDucNam_SE170582_Fall2024_A02.03/LeDucNam_SE170582_Fall2024_A02.03/LeDucNamFall2024RazorPages/Pages/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/S7/LeDucNam_SE170582_Fall2024_A02.03/LeDucNam_SE170582_Fall2024_A02.03/LeDucNamFall2024RazorPages/Pages/NewsArticlePage/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmV3c0FydGljbGVQYWdlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/S7/LeDucNam_SE170582_Fall2024_A02.03/LeDucNam_SE170582_Fall2024_A02.03/LeDucNamFall2024RazorPages/Pages/NewsArticlePage/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmV3c0FydGljbGVQYWdlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/S7/LeDucNam_SE170582_Fall2024_A02.03/LeDucNam_SE170582_Fall2024_A02.03/LeDucNamFall2024RazorPages/Pages/NewsArticlePage/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmV3c0FydGljbGVQYWdlXFVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/S7/LeDucNam_SE170582_Fall2024_A02.03/LeDucNam_SE170582_Fall2024_A02.03/LeDucNamFall2024RazorPages/Pages/NewsArticlePage/View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmV3c0FydGljbGVQYWdlXFZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/S7/LeDucNam_SE170582_Fall2024_A02.03/LeDucNam_SE170582_Fall2024_A02.03/LeDucNamFall2024RazorPages/Pages/NewsArticlePage/ViewByStaff.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmV3c0FydGljbGVQYWdlXFZpZXdCeVN0YWZmLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/S7/LeDucNam_SE170582_Fall2024_A02.03/LeDucNam_SE170582_Fall2024_A02.03/LeDucNamFall2024RazorPages/Pages/NewsArticlePage/ViewHistory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmV3c0FydGljbGVQYWdlXFZpZXdIaXN0b3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/S7/LeDucNam_SE170582_Fall2024_A02.03/LeDucNam_SE170582_Fall2024_A02.03/LeDucNamFall2024RazorPages/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/S7/LeDucNam_SE170582_Fall2024_A02.03/LeDucNam_SE170582_Fall2024_A02.03/LeDucNamFall2024RazorPages/Pages/ReportPage/View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVwb3J0UGFnZVxWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/S7/LeDucNam_SE170582_Fall2024_A02.03/LeDucNam_SE170582_Fall2024_A02.03/LeDucNamFall2024RazorPages/Pages/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/S7/LeDucNam_SE170582_Fall2024_A02.03/LeDucNam_SE170582_Fall2024_A02.03/LeDucNamFall2024RazorPages/Pages/Shared/_NewsLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9OZXdzTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/S7/LeDucNam_SE170582_Fall2024_A02.03/LeDucNam_SE170582_Fall2024_A02.03/LeDucNamFall2024RazorPages/Pages/Shared/_StaffLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9TdGFmZkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/S7/LeDucNam_SE170582_Fall2024_A02.03/LeDucNam_SE170582_Fall2024_A02.03/LeDucNamFall2024RazorPages/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/S7/LeDucNam_SE170582_Fall2024_A02.03/LeDucNam_SE170582_Fall2024_A02.03/LeDucNamFall2024RazorPages/Pages/StaffPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhZmZQYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/S7/LeDucNam_SE170582_Fall2024_A02.03/LeDucNam_SE170582_Fall2024_A02.03/LeDucNamFall2024RazorPages/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/S7/LeDucNam_SE170582_Fall2024_A02.03/LeDucNam_SE170582_Fall2024_A02.03/LeDucNamFall2024RazorPages/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/S7/LeDucNam_SE170582_Fall2024_A02.03/LeDucNam_SE170582_Fall2024_A02.03/LeDucNamFall2024RazorPages/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-1p7orbb0xg

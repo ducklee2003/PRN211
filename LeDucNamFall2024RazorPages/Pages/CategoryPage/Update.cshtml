@@ -1,0 +1,45 @@
+﻿@page
+@model LeDucNamFall2024RazorPages.Pages.CategoryPage.UpdateModel
+@{
+    Layout = "_StaffLayout";
+}
+@if(TempData["Message"] != null)
+{
+    <h2>@TempData["Message"]</h2>
+}
+<div style="display: flex; justify-content: center; align-items: center; height: 20vh;">
+    <div style="border: 1px solid #ddd; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); background-color: #f9f9f9;">
+        <form asp-page="" method="post">
+            <div>
+                <label asp-for="category.CategoryId"></label>
+                <input asp-for="category.CategoryId" value="@Model.category.CategoryId" type="text" readonly />
+            </div>
+
+            <div>
+                <label asp-for="category.CategoryName"></label>
+                <input asp-for="category.CategoryName" value="@Model.category.CategoryName" type="text" required />
+            </div>
+
+            <div>
+                <label asp-for="category.CategoryDesciption"></label>
+                <textarea asp-for="category.CategoryDesciption" rows="4" style="width: 100%;" required>@Model.category.CategoryDesciption</textarea>
+            </div>
+
+            <div>
+                <label asp-for="category.ParentCategoryId"></label>
+                <select asp-for="category.ParentCategoryId" value="@Model.category.ParentCategoryId" asp-items="Model.parentList" required></select>
+            </div>
+
+            <div>
+                <label asp-for="category.IsActive"></label>
+                <select asp-for="category.IsActive" value="@Model.category.IsActive" asp-items="Model.isActiveOptions"></select>
+            </div>
+
+            <button type="submit">Update category</button>
+        </form>
+
+        <form>
+            <button asp-page="/CategoryPage/View">Back to view</button>
+        </form>
+    </div>
+</div>

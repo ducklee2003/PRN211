@@ -1,0 +1,42 @@
+﻿@page
+@model LeDucNamFall2024RazorPages.Pages.CategoryPage.ViewModel
+@{
+    Layout = "_StaffLayout";
+}
+<h2>View category</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Category name</th>
+            <th>Category description</th>
+            <th>Parent category</th>
+            <th>Active</th>
+        </tr>
+    </thead>
+        
+   <tbody>
+        @foreach(var cate in Model.categories)
+        {
+            <tr>
+                <td>@cate.CategoryName</td>
+                <td>@cate.CategoryDesciption</td>
+                <td>@cate.ParentCategory.CategoryName</td>
+                <td>@cate.IsActive</td>
+                <td>
+                    <form asp-page="/CategoryPage/Update" method="get">
+                        <input type="hidden" name="id" value="@cate.CategoryId"/>
+                        <button type="submit">Update</button>
+                    </form>
+                </td>
+                <td>
+                    <form asp-page="/CategoryPage/Delete" method="get">
+                        <input type="hidden" name="id" value="@cate.CategoryId" />
+                        <button type="submit">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+
+   </tbody>
+
+</table>

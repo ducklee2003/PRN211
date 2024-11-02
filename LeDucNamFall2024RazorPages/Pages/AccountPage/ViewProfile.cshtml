@@ -1,0 +1,34 @@
+﻿@page
+@model LeDucNamFall2024RazorPages.Pages.AccountPage.ViewProfileModel
+@{
+    Layout = "_StaffLayout";
+}
+@if (TempData["Message"] != null)
+{
+    <h2>@TempData["Message"]</h2>
+}
+<form method="post">
+    <div>
+        <label asp-for="systemAccount.AccountId"></label>
+        <input asp-for="systemAccount.AccountId" type="text" value="@Model.systemAccount.AccountId" readonly />
+    </div>
+    <div>
+        <label asp-for="systemAccount.AccountName"></label>
+        <input asp-for="systemAccount.AccountName" type="text" readonly />
+    </div>
+    <div>
+        <label asp-for="systemAccount.AccountEmail"></label>
+        <input asp-for="systemAccount.AccountEmail" type="text" readonly />
+    </div>
+    <div>
+        <label asp-for="systemAccount.AccountRole"></label>
+        <input asp-for="systemAccount.AccountRole" type="text" value="@Model.systemAccount.AccountRole" readonly />
+    </div>
+    <div>
+        <label asp-for="systemAccount.AccountPassword"></label>
+        <input asp-for="systemAccount.AccountPassword" type="text" required />
+    </div>
+    <div>
+        <button type="submit">Update</button>
+    </div>
+</form>
